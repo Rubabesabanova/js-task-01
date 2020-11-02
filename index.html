@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="register-wrapper">
+        <div class="form-wrapper">
+          <div class="register-title">
+            <h2 class="title">Registration Form</h2>
+          </div>
+          <form action="">
+            <div class="row">
+              <div class="row-items">
+                <span class="items-name">First Name</span>
+                <input class="items-input" type="text" placeholder="Bobo" />
+              </div>
+              <div class="row-items">
+                <span class="items-name">Last Name</span>
+                <input class="items-input" type="text" placeholder="Nymphadora" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-items date-item">
+                <span class="items-name">Birthday</span>
+                <input class="items-input date-input" type="date" />
+              </div>
+              <div class="row-items checkbox-item">
+                <h2 class="items-name">Gender</h2>
+                <div class="checkbox-wrapper">
+                  <input class="checkbox-input" type="radio" id="male" name="gender" value="male" />
+                  <span class="checkbox-name">Male</span>
+                  <input class="checkbox-input" type="radio" id="female" name="gender" value="female" />
+                  <span class="checkbox-name">Female</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-items">
+                <span class="items-name">Email</span>
+                <input class="items-input" type="text" />
+              </div>
+              <div class="row-items">
+                <span class="items-name">Phone Number</span>
+                <input class="items-input" type="text" />
+              </div>
+            </div>
+            <div class="selection-row">
+              <h2 class="items-name">Subject</h2>
+              <select class="select-field" name="subject" id="subject">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
