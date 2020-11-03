@@ -15,59 +15,64 @@
           <div class="register-title">
             <h2 class="title">Registration Form</h2>
           </div>
-          <form action="">
+          <form id="form" action="#">
             <div class="row">
-              <div class="row-items ">
+              <div class="row-items">
                 <span class="items-name">First Name</span>
-                
                 <input class="items-input firstname-item" type="text" placeholder="Bobo" />
+                <span class="error-message error-firstname"></span>
               </div>
               <div class="row-items">
                 <span class="items-name">Last Name</span>
-                
+
                 <input class="items-input lastname-item" type="text" placeholder="Nymphadora" />
+                <span class="error-message error-lastname"></span>
               </div>
             </div>
             <div class="row">
               <div class="row-items date-item">
                 <span class="items-name">Birthday</span>
-                
                 <input class="items-input date-input birthday-item" type="date" />
+                <span class="error-message error-birthday"></span>
               </div>
               <div class="row-items checkbox-item">
                 <h2 class="items-name">Gender</h2>
-                
+
                 <div class="checkbox-wrapper">
                   <input class="checkbox-input" type="radio" id="male" name="gender" value="male" />
                   <span class="checkbox-name">Male</span>
                   <input class="checkbox-input" type="radio" id="female" name="gender" value="female" />
                   <span class="checkbox-name">Female</span>
                 </div>
+                <span class="error-message error-gender"></span>
               </div>
             </div>
             <div class="row">
               <div class="row-items">
                 <span class="items-name">Email</span>
-                
+
                 <input class="items-input email-item" type="text" />
+                <span class="error-message error-email"></span>
               </div>
               <div class="row-items">
                 <span class="items-name">Phone Number</span>
-                
+
                 <input class="items-input number-item" type="text" />
+                <span class="error-message error-number"></span>
               </div>
             </div>
             <div class="selection-row selection-item">
               <h2 class="items-name">Subject</h2>
-              
+
               <select class="select-field" name="subject" id="subject">
                 <option value="default">Choose Option</option>
                 <option value="dark">Dark</option>
                 <option value="light">Light</option>
               </select>
+              <span class="error-message error-select"></span>
             </div>
             <div class="row">
-                <button id="submit-button">Submit</button>
+              <button id="submit-button">Submit</button>
             </div>
           </form>
         </div>

@@ -1,83 +1,104 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 .container {
   width: 100%;
-  padding: calc((100vh - 450px)/2) 0;
-  background: linear-gradient(220deg, rgba(56,54,78,1) 0%, rgba(22,120,154,1) 60%,rgba(41,241,235,1) 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(220deg, rgba(56, 54, 78, 1) 0%, rgba(22, 120, 154, 1) 60%, rgba(41, 241, 235, 1) 100%);
 }
 .register-wrapper {
   width: 470px;
-  height: 480px;
+  min-height: 480px;
   margin: auto;
   border-radius: 10px;
   background: white;
 }
-.form-wrapper{
-    padding: 45px;
-    font-size:18px;
-    color: rgb(78, 78, 78);
+.form-wrapper {
+  padding: 45px;
+  font-size: 18px;
+  color: rgb(78, 78, 78);
 }
-.title{
-    margin-bottom: 20px;
+.title {
+  margin-bottom: 20px;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
 }
-.row-items{
-    margin-right: 20px;
+.row-items {
+  margin-right: 20px;
 }
-.row-items .items-name{
-    font-size: 14px;
+.row-items .items-name {
+  font-size: 14px;
 }
-.row-items .items-input{
-    margin: 5px 0;
-    font-weight: 200;
-    width: 165px;
-    padding: 10px 10px;
-    background-color: rgb(252, 252, 252);
-    outline: none;
-    border: 1px rgb(204, 204, 204) solid;
-    border-radius: 3px;
+.row-items .items-input {
+  margin: 5px 0;
+  font-weight: 200;
+  width: 165px;
+  padding: 10px 10px;
+  background-color: rgb(252, 252, 252);
+  outline: none;
+  border: 1px rgb(204, 204, 204) solid;
+  border-radius: 3px;
 }
-.date-item{
-    width: 165px;
-    margin-right: 5px;
+.date-item {
+  width: 165px;
+  margin-right: 5px;
 }
-.checkbox-item{
-    position: absolute;
-    left: 52%;
+.checkbox-item {
+  position: absolute;
+  left: 52%;
 }
-.checkbox-wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+.checkbox-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
-.checkbox-name{
-    font-size: 14px;
+.checkbox-name {
+  font-size: 14px;
 }
-.selection-row{
-    padding: 8px 0;
+.selection-row {
+  padding: 8px 0;
 }
-.select-field{
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px 10px;
-    background-color: rgb(252, 252, 252);
-    outline: none;
-    border: 1px rgb(204, 204, 204) solid;
-    border-radius: 3px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+.select-field {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 10px;
+  background-color: rgb(252, 252, 252);
+  outline: none;
+  border: 1px rgb(204, 204, 204) solid;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
 }
-#submit-button{
-    padding: 15px 30px;
-    background-color:#1a7090;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
-    color: white;
+#submit-button {
+  padding: 15px 30px;
+  background-color: #1a7090;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: white;
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+.row-items.success input {
+  border-color: #2ecc71;
+}
+
+.row-items.error input {
+  border-color: #e74c3c;
+}
+
+.error-message {
+  color: #e74c3c;
+  visibility: hidden;
+}
+.row-items.error .error-message {
+  visibility: visible;
 }
