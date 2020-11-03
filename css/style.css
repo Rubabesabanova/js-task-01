@@ -87,9 +87,6 @@ body {
   font-size: 12px;
   color: red;
 }
-.row-items.success input {
-  border-color: #2ecc71;
-}
 
 .row-items.error input {
   border-color: #e74c3c;
